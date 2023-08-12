@@ -1,7 +1,7 @@
 export default class CurrencyService {
   static async convertCurrency(amount, targetCurrency) {
     const apiKey = process.env.API_KEY;
-    const apiUrl = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/USD`;
+    const apiUrl = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
     
     try {
       const response = await fetch(apiUrl);
