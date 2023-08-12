@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import CurrencyService from './js/currency-service.js';
 
-// Business Logic
+// UI Logic
 
 const form = document.getElementById('exchange-form');
 const resultDiv = document.getElementById('results');
@@ -19,7 +19,11 @@ form.addEventListener('submit', async (event) => {
     const result = await CurrencyService.convertCurrency(amount, currency);
     showResult(`${result.amount} USD is approximately ${result.convertedAmount} ${result.targetCurrency}`);
   } catch (error) {
-    showError(error.message);
+    if (error.message === 'Selected currency is not supported.') {
+      showError(error.message);
+    } else {
+      showError('An error occured while processing your request.');
+    }
   }
 });
 
@@ -29,7 +33,7 @@ function showResult(message) {
 }
 
 function showError(message) {
-  errorDiv.textContent = '';
-  resultDiv.textContent = message;
+  resultDiv.textContent = '';
+  errorDiv.textContent = message;
 }
 
