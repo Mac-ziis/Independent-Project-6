@@ -12,19 +12,27 @@ export default class CurrencyService {
         throw new Error(errorMessage);
       }
 
-      if (!data.rates[targetCurrency]) {
+      const conversionRates = data.conversion_rates;
+      if (!conversionRates[targetCurrency]) {
         throw new Error('Selected Currency is not supported.');
       }
 
-      const exchangeRate = data.rates[targetCurrency];
+      const exchangeRate = conversionRates[targetCurrency];
       const convertedAmount = (amount * exchangeRate).toFixed(2);
+
+      const currencyRates = {};
+      for (const currency in conversionRates) {
+        currencyRates[currency] = (amount * conversionRates[currency]).toFixed(2);
+      }
+
       return {
         amount: amount,
         convertedAmount: convertedAmount,
-        targetCurrency: targetCurrency
+        targetCurrency: targetCurrency,
+        currencyRates: currencyRates
       };
     } catch (error) {
-      throw new Error ('An error occured while processing you request.');
+      throw new Error ('An error occured while processing your request.');
     }
   }
 }
