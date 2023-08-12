@@ -1,38 +1,41 @@
-# _{Application Name}_
+# _Currency Exchange App_
 
-#### By _**{List of contributors}**_
+#### By _**Mac Granger**_
 
-#### _{Brief description of application}_
+#### _This app will allow you to input a specific amount of USD and receive the exchange rates of 6 other foreign currencies!_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Javascript_
+* _eslint 8.18.0_
+* _Babel 7.18.6_
+* _webpack 4.46.0_
+* _node.js_ 
+* _dotenv webpack 2.0.0_
+* _Github_
+* _Visual Studio Code_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_The Currency Exchange Application will allow the user to input their desired amount in USD and then choose which of the 6 foreign currencies they would like to convert to. After inputting the desired amount and choosing the currency to convert to the user will click the "Convert" button and see the converted amount displayed on the page._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _In your command terminal you will type the following: git clone https://github.com/Mac-ziis/Independent-Project-6_
+* _Once the project is cloned to your machine, navigate to the directory and open the main project directory along with all of the files included. This will require Vs Code or software with similar capabilities._
+* _Once the file/files are open in your software, in this case I am using Visual studio code, you will type into your command terminal: npm install - to initialize and install the included webpacks onto your machine._
+* _Then, in your command terminal you will enter: npm run start - to complete the build and open the live web browser._
+* _Lastly, you will input the desired amount into the USD form input and select the currency you would like to convert to from the dropdown menu, then you will click "Convert" to see your converted currencies displayed._
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs._
 
 ## License
 
-Copyright (c) <year> <copyright holders>
+Copyright (c) 2023 Mackenzie Granger
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
