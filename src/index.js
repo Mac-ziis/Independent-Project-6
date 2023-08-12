@@ -19,10 +19,10 @@ form.addEventListener('submit', async (event) => {
     const result = await CurrencyService.convertCurrency(amount, currency);
     showResult(`${result.amount} USD is approximately ${result.convertedAmount} ${result.targetCurrency}`);
   } catch (error) {
-    if (error.message === 'Selected currency is not supported.') {
+    if (error.message === 'An error occured while processing your request.') {
       showError(error.message);
     } else {
-      showError('An error occured while processing your request.');
+      showError('Selected Currency is not supported.');
     }
   }
 });

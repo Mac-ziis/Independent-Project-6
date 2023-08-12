@@ -14,7 +14,7 @@ export default class CurrencyService {
 
       const conversionRates = data.conversion_rates;
       if (!conversionRates[targetCurrency]) {
-        throw new Error('Selected Currency is not supported.');
+        throw new Error('An error occured while processing your request.');
       }
 
       const exchangeRate = conversionRates[targetCurrency];
@@ -32,7 +32,7 @@ export default class CurrencyService {
         currencyRates: currencyRates
       };
     } catch (error) {
-      throw new Error ('An error occured while processing your request.');
+      throw new Error ('Selected Currency is not supported.');
     }
   }
 }

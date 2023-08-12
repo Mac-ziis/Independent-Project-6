@@ -2,7 +2,7 @@
 
 #### By _**Mac Granger**_
 
-#### _This app will allow you to input a specific amount of USD and receive the exchange rates of 6 other foreign currencies!_
+#### _This app will allow you to input a specific amount of USD and receive the exchange rates of 7 other foreign currencies!_
 
 ## Technologies Used
 
@@ -19,7 +19,7 @@
 
 ## Description
 
-_The Currency Exchange Application will allow the user to input their desired amount in USD and then choose which of the 6 foreign currencies they would like to convert to. After inputting the desired amount and choosing the currency to convert to the user will click the "Convert" button and see the converted amount displayed on the page._
+_The Currency Exchange Application will allow the user to input their desired amount in USD and then choose which of the 7 foreign currencies they would like to convert to. After inputting the desired amount and choosing the currency to convert to the user will click the "Convert" button and see the converted amount displayed on the page. One of these currencies is fictional and therefore not supported.. Yet._
 
 ## Setup/Installation Requirements
 

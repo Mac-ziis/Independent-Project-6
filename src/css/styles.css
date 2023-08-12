@@ -76,3 +76,25 @@ button:hover {
   color: #ff0000;
   background-color: #ffd2d2;
 }
+
+/* styles for mobile screen sizes */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .error, .result {
+    font-size: 18px;
+  }
+
+  form {
+    margin: 10px;
+  }
+
+  input, select, button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
