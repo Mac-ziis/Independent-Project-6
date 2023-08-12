@@ -1,11 +1,15 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-//import file name and path for other js files
+import CurrencyService from './js/currency-service.js';
 
 // Business Logic
 
+const form = document.getElementById('exchange-form');
+const resultDiv = document.getElementById('result');
+const errorDiv= document.getElementById('error');
 
-
-// UI Logic
+form.addEventListener('submit', async, (event) => {
+  event.preventDefault();
+})
 
