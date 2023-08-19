@@ -26,6 +26,9 @@ _The Currency Exchange Application will allow the user to input their desired am
 * _In your command terminal you will type the following: git clone https://github.com/Mac-ziis/Independent-Project-6_
 * _Once the project is cloned to your machine, navigate to the directory and open the main project directory along with all of the files included. This will require Vs Code or software with similar capabilities._
 * _Once the file/files are open in your software, in this case I am using Visual studio code, you will type into your command terminal: npm install - to initialize and install the included webpacks onto your machine._
+* _While in your main directory, type into your command terminal: touch .env - to make the file needed to hold your API key._
+* _Within your web browser, navigate to this URL: https://app.exchangerate-api.com/sign-up - create a free account and then click the button that says "Accept terms & create API key!"._
+* _After your key is created, navigate to your .env file and type the following: API_KEY= and then enter your newly created key to link the API to the project._
 * _Then, in your command terminal you will enter: npm run start - to complete the build and open the live web browser._
 * _Lastly, you will input the desired amount into the USD form input and select the currency you would like to convert to from the dropdown menu, then you will click "Convert" to see your converted currencies displayed._
 
